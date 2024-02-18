@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-    content="Bienvenido a GLAMLOOK. Nuestra increíble página de productos de belleza facial.">
+    <meta name="description" content="Bienvenido a GLAMLOOK. Nuestra increíble página de productos de belleza facial.">
     <title>ekommart</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,21 +22,33 @@
         font-size: var(--font-base);
         transition: all 0.3s ease-in-out;
     }
+
+    .cambiar-color {
+        background-color: rgb(32, 7, 7);
+        padding: 10px;
+        cursor: pointer;
+    }
 </style>
 
 <body>
     <header>
-        <div class="sign-in">
-            <div>    <a href="#main-content" tabindex="1" class="pink">Saltar al contenido principal</a></div>
+
+        <div class="add">
+
+            <div> <button class="searcher-button" onclick="toggleNav()">Mostrar/Ocultar </button>
+                <button class="searcher-button" onclick="cambiarColor()">Cambiar Color</button>
+            </div>
+
+
             <h1 class="center-header">ekommart</h1>
-              
-        
+
+
 
         </div>
-      
-        <div class="sign-in">
+
+        <div class="sign-in" id="sign-in">
             <div class="welcome"> Welcome to our online store! Join Free or <a href="#" class="pink">Sign in</a></div>
-       
+
             <div class="language">
                 <div class="coin">English | USD</div>
             </div>
@@ -55,11 +66,12 @@
             <form action="#" method="post" class="center-header" aria-label="Search Form">
                 <div class="border-searcher">
                     <label for="searcher" class="buscador disabled" title="Search" id="white-point">.</label>
-                    <input type="text" name="searcher" id="searcher" class="searcher" placeholder="Search among 100,000 products" title="Search">
+                    <input type="text" name="searcher" id="searcher" class="searcher"
+                        placeholder="Search among 100,000 products" title="Search">
                     <button type="submit" class="searcher-button">Search</button>
                 </div>
             </form>
-            
+
 
             <div class="center-header images none">
                 <img src="images/media.png" alt="user" class="user">
@@ -70,27 +82,27 @@
 
     </header>
     <div class="top-bar">
-        <nav  aria-label="Main Navigation">
+        <nav aria-label="Main Navigation" id="main-nav">
             <ul class="ul-nav">
                 <li class="nav"><a href="#" class="lineas bold">All Departments</a>
                     <div class="absolute">
                         <ul class="lineas-disabled">
                             <div class="column">
                                 <li class="border-nav"><a href="#" class="hover1 list">Electronics</a></li>
-                                <li class="border-nav"><a href="#"  class="hover2 list">Home & Garden</a>
+                                <li class="border-nav"><a href="#" class="hover2 list">Home & Garden</a>
                                     <ul class="disabled">
                                         <li class="disabled"><a href="#"></a></li>
                                         <li class="disabled"><a href="#"></a></li>
                                     </ul>
                                 </li>
-                                <li class="border-nav"><a href="#"  class="hover3 list">Beauty & Health</a>
+                                <li class="border-nav"><a href="#" class="hover3 list">Beauty & Health</a>
                                     <ul class="disabled">
                                         <li class="disabled"><a href="#"></a></li>
                                         <li class="disabled"><a href="#"></a></li>
                                     </ul>
                                 </li>
-                                <li class="border-nav"><a href="#"  class="hover4 list">Toys & Kids</a></li>
-                                <li class="border-nav"><a href="#"  class="hover5 list">Fashion</a>
+                                <li class="border-nav"><a href="#" class="hover4 list">Toys & Kids</a></li>
+                                <li class="border-nav"><a href="#" class="hover5 list">Fashion</a>
                                     <ul class="disabled">
                                         <li class="disabled"><a href="#"></a></li>
                                         <li class="disabled"><a href="#"></a></li>
@@ -98,7 +110,7 @@
                                 </li>
                                 <li class="border-nav"><a href="#" class="hover6 list">Sporting Goods</a></li>
                                 <li class="border-nav"><a href="#" class="hover7 list">Automative</a></li>
-                                <li class="border-nav"><a href="#"  class="hover8 list">Pet Supplies</a></li>
+                                <li class="border-nav"><a href="#" class="hover8 list">Pet Supplies</a></li>
                                 <li class="border-nav"><a href="#" class="hover9 list">Daily Deals</a></li>
                             </div>
 
@@ -140,15 +152,15 @@
 
 
         <section class="disabled-images">
-            <h2  class="recommended-text">Images</h2>
-            <article class="principal-image"   aria-label="image1">
+            <h2 class="recommended-text">Images</h2>
+            <article class="principal-image" aria-label="image1">
                 <a href="#">
                     <img src="images/principalImage.png" alt="principal" class="principal">
                 </a>
                 <div class="absolute">
                     <div class="text-image1">
                         <div class="makeup">LUXURY MAKE UP DIFT SETS</div>
-                        <h3 class="luxury" >LUXURY</h3>
+                        <h3 class="luxury">LUXURY</h3>
                         <div class="beauty">BEAUTY PRODUCTS</div>
                     </div>
                 </div>
@@ -168,7 +180,7 @@
 
 
                 </article>
-                <article class="banner-box"  aria-label="image3">
+                <article class="banner-box" aria-label="image3">
                     <a href="#">
                         <img src="images/banner1.png" alt="banner2">
                     </a>
@@ -193,7 +205,7 @@
 
                     <ul class="sidebar">
                         <li class="hr">
-                            <article class="aside-align"  aria-label="article">
+                            <article class="aside-align" aria-label="article">
                                 <div class="aside-image"> <img src="images/producto14.png" alt="#"
                                         class="product-aside">
                                 </div>
@@ -207,7 +219,7 @@
                             </article>
                         </li>
                         <li class="hr">
-                            <article class="aside-align"  aria-label="article2">
+                            <article class="aside-align" aria-label="article2">
                                 <div class="aside-image"> <img src="images/producto15.png" alt="#"
                                         class="product-aside">
                                 </div>
@@ -220,7 +232,7 @@
                             </article>
                         </li>
                         <li class="hr">
-                            <article class="aside-align"  aria-label="article3">
+                            <article class="aside-align" aria-label="article3">
                                 <div class="aside-image"> <img src="images/producto16.png" alt="#"
                                         class="product-aside">
                                 </div>
@@ -233,7 +245,7 @@
                             </article>
                         </li>
                         <li class="hr">
-                            <article class="aside-align"  aria-label="article4">
+                            <article class="aside-align" aria-label="article4">
                                 <div class="aside-image"> <img src="images/producto17.png" alt="#"
                                         class="product-aside">
                                 </div>
@@ -246,7 +258,7 @@
                             </article>
                         </li>
                         <li>
-                            <article class="aside-align"  aria-label="article5">
+                            <article class="aside-align" aria-label="article5">
                                 <div class="aside-image"> <img src="images/producto18.png" alt="#"
                                         class="product-aside">
                                 </div>
@@ -264,7 +276,7 @@
             <div class="align-prodcuts" id="main-content">
                 <section>
                     <h2 class="disabled">Productos</h2>
-                    <nav  aria-label="Navigation">
+                    <nav aria-label="Navigation">
                         <ul class="ul-nav">
                             <li><a href="#" class="second-nav">Best Sellers</a></li>
                             <li><a href="#" class="second-nav" id="point">Featured</a></li>
@@ -274,7 +286,7 @@
                     <ul class="product-section">
                         <div class="box-product">
                             <li>
-                                <article class="article-products"  aria-label="article6">
+                                <article class="article-products" aria-label="article6">
                                     <div class="article-box">
                                         <div class="absolute">
                                             <div class="new" style="width: 40px;">New</div>
@@ -310,7 +322,7 @@
                                 </article>
                             </li>
                             <li>
-                                <article class="article-products"  aria-label="article8">
+                                <article class="article-products" aria-label="article8">
                                     <div class="article-box"> <img src="images/producto2.png" alt="#" class="product">
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
                                         <div class="grey">Personal Computers</div>
@@ -339,7 +351,7 @@
                                 </article>
                             </li>
                             <li>
-                                <article class="article-products"  aria-label="article9">
+                                <article class="article-products" aria-label="article9">
                                     <div class="article-box">
                                         <div class="absolute">
                                             <div class="new">New</div>
@@ -373,7 +385,7 @@
                                 </article>
                             </li>
                             <li>
-                                <article class="article-products"  aria-label="article10">
+                                <article class="article-products" aria-label="article10">
                                     <div class="article-box">
                                         <div class="absolute">
                                             <div class="sale">Sale</div>
@@ -411,7 +423,7 @@
                             </li>
 
                             <li>
-                                <article class="article-products"   aria-label="article12">
+                                <article class="article-products" aria-label="article12">
                                     <div class="article-box"> <img src="images/producto5.png" alt="#" class="product">
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
                                         <div class="grey">Electronics</div>
@@ -440,7 +452,7 @@
                                 </article>
                             </li>
                             <li>
-                                <article class="article-products"  aria-label="article13">
+                                <article class="article-products" aria-label="article13">
                                     <div class="article-box"> <img src="images/producto6.png" alt="#" class="product">
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
                                         <div class="grey">Personal Computers</div>
@@ -469,7 +481,7 @@
                                 </article>
                             </li>
                             <li>
-                                <article class="article-products"  aria-label="article14">
+                                <article class="article-products" aria-label="article14">
                                     <div class="article-box"><img src="images/producto7.png" alt="#" class="product">
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
                                         <div class="grey">Toys</div>
@@ -498,7 +510,7 @@
                                 </article>
                             </li>
                             <li>
-                                <article class="article-products"  aria-label="article15">
+                                <article class="article-products" aria-label="article15">
                                     <div class="article-box"> <img src="images/producto8.png" alt="#" class="product">
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
                                         <div class="grey">Camera</div>
@@ -555,7 +567,7 @@
             <ul>
                 <div class="box-product">
                     <li>
-                        <article class="article-products"  aria-label="article16">
+                        <article class="article-products" aria-label="article16">
                             <div class="article-box" id="article-box1">
                                 <div class="absolute">
                                     <div class="new">New</div>
@@ -574,8 +586,8 @@
                                             <div class="box-block"> <a href="#"><img src="images/favorite.png" alt="fav"
                                                         class="fav"></a></div>
 
-                                            <div class="box-block" id="link-box9"> <a href="#"><img src="images/link.png"
-                                                        alt="link" class="link-box"></a></div>
+                                            <div class="box-block" id="link-box9"> <a href="#"><img
+                                                        src="images/link.png" alt="link" class="link-box"></a></div>
 
                                             <div class="box-block"> <a href="#"><img src="images/view.png" alt="view"
                                                         class="fav"></a></div>
@@ -589,7 +601,7 @@
                         </article>
                     </li>
                     <li>
-                        <article class="article-products"  aria-label="article17">
+                        <article class="article-products" aria-label="article17">
                             <div class="article-box" id="article-box2"> <img src="images/producto10.png" alt="#"
                                     class="product">
                                 <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
@@ -603,8 +615,8 @@
                                             <div class="box-block"> <a href="#"><img src="images/favorite.png" alt="fav"
                                                         class="fav"></a></div>
 
-                                            <div class="box-block" id="link-box10"> <a href="#"><img src="images/link.png"
-                                                        alt="link" class="link-box"></a></div>
+                                            <div class="box-block" id="link-box10"> <a href="#"><img
+                                                        src="images/link.png" alt="link" class="link-box"></a></div>
 
                                             <div class="box-block"> <a href="#"><img src="images/view.png" alt="view"
                                                         class="fav"></a></div>
@@ -618,7 +630,7 @@
                         </article>
                     </li>
                     <li>
-                        <article class="article-products"  aria-label="article18">
+                        <article class="article-products" aria-label="article18">
                             <div class="article-box" id="article-box3">
                                 <div class="absolute">
                                     <div class="new">New</div>
@@ -636,8 +648,8 @@
                                             <div class="box-block"> <a href="#"><img src="images/favorite.png" alt="fav"
                                                         class="fav"></a></div>
 
-                                            <div class="box-block" id="link-box11"> <a href="#"><img src="images/link.png"
-                                                        alt="link" class="link-box"></a></div>
+                                            <div class="box-block" id="link-box11"> <a href="#"><img
+                                                        src="images/link.png" alt="link" class="link-box"></a></div>
 
                                             <div class="box-block"> <a href="#"><img src="images/view.png" alt="view"
                                                         class="fav"></a></div>
@@ -651,7 +663,7 @@
                         </article>
                     </li>
                     <li>
-                        <article class="article-products"  aria-label="article19">
+                        <article class="article-products" aria-label="article19">
                             <div class="article-box" id="article-box4">
                                 <div class="absolute">
                                     <div class="sale">Sale</div>
@@ -672,8 +684,8 @@
                                             <div class="box-block"> <a href="#"><img src="images/favorite.png" alt="fav"
                                                         class="fav"></a></div>
 
-                                            <div class="box-block" id="link-box12"> <a href="#"><img src="images/link.png"
-                                                        alt="link" class="link-box"></a></div>
+                                            <div class="box-block" id="link-box12"> <a href="#"><img
+                                                        src="images/link.png" alt="link" class="link-box"></a></div>
 
                                             <div class="box-block"> <a href="#"><img src="images/view.png" alt="view"
                                                         class="fav"></a></div>
@@ -687,7 +699,7 @@
                         </article>
                     </li>
                     <li>
-                        <article class="article-products"  aria-label="article20">
+                        <article class="article-products" aria-label="article20">
                             <div class="article-box" id="article-box5"> <img src="images/producto13.png" alt="#"
                                     class="product">
                                 <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
@@ -701,8 +713,8 @@
                                             <div class="box-block"> <a href="#"><img src="images/favorite.png" alt="fav"
                                                         class="fav"></a></div>
 
-                                            <div class="box-block" id="link-box13"> <a href="#"><img src="images/link.png"
-                                                        alt="link" class="link-box"></a></div>
+                                            <div class="box-block" id="link-box13"> <a href="#"><img
+                                                        src="images/link.png" alt="link" class="link-box"></a></div>
 
                                             <div class="box-block"> <a href="#"><img src="images/view.png" alt="view"
                                                         class="fav"></a></div>
@@ -736,18 +748,10 @@
                         Your browser does not support the video tag.
                     </video>
                 </div>
-                <div class="youtube">
-                    <iframe
-                        src="https://www.youtube.com/embed/1-Oi1WbMsFA?si=UYSEZ2xGDJ7ST4cy"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen
-                    ></iframe>
-                </div>
             
-                
+
             </div>
-          
+
         </section>
 
 
@@ -762,12 +766,13 @@
                         <form action="#" method="post" aria-label="Subscribe Form">
                             <div class="border-searcher2">
                                 <label for="subscribe" class="subscribir" title="Subscribir" id="blue-point">.</label>
-                                <input type="text" name="subscribe" id="subscribe" class="subscribe" placeholder="Your Email..." title="Subscribir">
+                                <input type="text" name="subscribe" id="subscribe" class="subscribe"
+                                    placeholder="Your Email..." title="Subscribir">
                                 <button type="submit" class="searcher-button">Subscribe</button>
                             </div>
                         </form>
-                        
-                        
+
+
                         <div class="discount">15% off one full priced item of your choice! Exclusive offers!</div>
                     </div>
                 </div>
@@ -780,7 +785,7 @@
             <ul>
                 <div class="final center">
                     <li>
-                        <article class="final-box"  aria-label="article21">
+                        <article class="final-box" aria-label="article21">
                             <div class="absolute">
                                 <div class="grey-line">
                                     <div class="point">.</div>
@@ -790,7 +795,7 @@
                             <div class="grey-text">23 Roffson Skyway Suite 456</div>
                         </article>
                     <li>
-                        <article class="final-box"  aria-label="article22">
+                        <article class="final-box" aria-label="article22">
                             <div class="absolute">
                                 <div class="grey-line">
                                     <div class="point">.</div>
@@ -802,7 +807,7 @@
                         </article>
                     </li>
                     <li>
-                        <article class="final-box" id="margins"   aria-label="article23">
+                        <article class="final-box" id="margins" aria-label="article23">
                             <div class="absolute">
                                 <div class="grey-line">
                                     <div class="point">.</div>
@@ -853,7 +858,7 @@
                                 <h3>LASTEST BLOGS</h3>
                                 <ul class="ul-footer">
                                     <li>
-                                        <article class="align-footer"  aria-label="footer1">
+                                        <article class="align-footer" aria-label="footer1">
                                             <img src="images/blog1.png" alt="blogs" class="blog">
                                             <div class="footer-text">
                                                 <h4 class="pink-hover">The KOBE V Gets the Proto Treat-ment</h4>
@@ -877,7 +882,7 @@
 
                     <div class="final-box2" id="box3">
                         <li>
-                            <article  aria-label="footer3">
+                            <article aria-label="footer3">
                                 <h3>INFORMATION</h3>
                                 <ul class="ul-footer2">
                                     <li><a href="#" class="link" id="link1">Contact US </a></li>
@@ -945,6 +950,37 @@
             <h3 class="copy"> Copyright © 2020 <a href="#" class="pink">ekommart</a>. All Rigths Reserved. </h3>
         </section>
     </footer>
+
+    <script>
+        var colorCambiado = false;
+
+        function cambiarColor() {
+            var signInDiv = document.getElementById("sign-in");
+
+            if (colorCambiado) {
+                signInDiv.style.backgroundColor = "white";
+            } else {
+                signInDiv.style.backgroundColor = "lightcoral";
+            }
+
+
+            colorCambiado = !colorCambiado;
+        }
+        var navVisible = false;
+
+        function toggleNav() {
+            var nav = document.getElementById("main-nav");
+
+            if (navVisible) {
+                nav.style.display = "none";
+            } else {
+                nav.style.display = "block";
+            }
+
+           
+            navVisible = !navVisible;
+        }
+    </script>
 </body>
 
 </html>

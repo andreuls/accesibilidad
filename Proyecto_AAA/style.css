@@ -28,6 +28,13 @@ ul {
     list-style: none;
 }
 
+.add{
+    border-bottom: 1px solid var(--grey);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
 .fixed{
     position: fixed;
     background-color: var(--white);
